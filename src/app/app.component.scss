@@ -471,6 +471,17 @@
 /* ******************************
 :: 3.0 WELCOME AREA CSS
 ****************************** */
+
+@media (max-width: 1200px) {
+  .next-presentation-action {
+    display: none;
+  }
+
+  .mobile-button {
+    display: block;
+  }
+}
+
 @media (min-width: 991px) {
   .homepage-4 .contact-title {
     font-size: 24px;
@@ -488,6 +499,10 @@
 }
 
 @media (max-width: 767px) {
+  .mobile-button {
+    margin: 0 auto;
+  }
+
   .welcome-area {
     height: 100% !important;
     padding-top: 90px;
@@ -516,7 +531,7 @@
   }
 
   .btn-circle {
-    background-color: rgba(90, 35, 255, 0.2);
+    background-color: rgba(91, 37, 255, 0.363);
   }
 
   .play-icon {
@@ -525,13 +540,21 @@
 }
 
 @media (max-width: 575px) {
+  .next-presentation {
+    font-size: 1rem;
+  }
+
+  .next-presentation-action {
+    display: none;
+  }
+
   .welcome-intro {
     margin-top: 0;
   }
 
   .welcome-intro > h1 {
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 
@@ -553,7 +576,7 @@
   }
 
   .btn-circle {
-    background-color: rgba(90, 35, 255, 0.2);
+    background-color: rgba(91, 37, 255, 0.363);
   }
 
   .play-icon {

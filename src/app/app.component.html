@@ -90,16 +90,26 @@
             </h1>
 
             <!-- <h1 class="text-white"> </h1> -->
-            <p class="text-white my-4 welcome-intro-sub">
+            <!-- <p class="text-white my-4 welcome-intro-sub">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
               nihil tenetur minus quidem est deserunt molestias accusamus harum
               ullam tempore debitis et, expedita, repellat delectus aspernatur
               neque itaque qui quod.
-            </p>
-            <!-- Subscribe Form -->
-            <button type="submit" class="btn btn-bordered">
+            </p> -->
+            <div class="next-presentation">
+              다음 설명회:
+              {{ nextPresentationDate | date: "yyyy.MMMM.dd EEEE":"":"ko" }}
+              <button
+                type="submit  "
+                class="btn btn-bordered next-presentation-action"
+              >
+                창업 설명회 신청!
+              </button>
+            </div>
+            <button type="submit  " class="btn btn-bordered mobile-button">
               창업 설명회 신청!
             </button>
+            <!-- Subscribe Form -->
           </div>
         </div>
         <div class="col-12 col-md-5 col-lg-6">

@@ -534,12 +534,33 @@ a,
 }
 
 /*BG SHAPE*/
+
+.next-presentation {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 120px;
+  -webkit-box-shadow: 0 4px 25px rgba(30, 39, 69, 0.3),
+    0 1px 0px rgba(30, 39, 69, 0.4);
+  box-shadow: 0 4px 25px rgba(30, 39, 69, 0.3), 0 1px 0px rgba(30, 39, 69, 0.4);
+  > button {
+    margin-left: 25px;
+  }
+}
+
 .shapes-container {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.mobile-button {
+  display: none;
 }
 
 .shape {

@@ -11,12 +11,16 @@ export class AppComponent {
   constructor(private readonly presenatationService: PresentationService) {}
   title = 'kipolo-vendor-lp';
   presentation!: PresentationDto[];
+  nextPresentationDate!: Date;
 
   ngOnInit() {
     console.log('initializing');
     this.presenatationService.getScheduledPresentation().subscribe({
       next: (presentation) => {
         this.presentation = presentation.data;
+        this.nextPresentationDate = new Date(
+          presentation.data[0].presentationDate as string
+        );
       },
     });
   }
